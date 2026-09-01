@@ -8,7 +8,9 @@ This is a free, static first version of the customer registration website.
 - Validates required fields
 - Creates a registration reference number
 - Shows a confirmation screen
+- Shows a Next Note (kindly pay $19.9)
 - Saves demo registrations to the browser's localStorage
+
 
 ## Important limitation
 This version does NOT provide a shared online customer database. localStorage means records stay in the browser/device where they were submitted.
