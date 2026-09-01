@@ -5,11 +5,8 @@ This is a free, static first version of the customer registration website.
 ## What it currently does
 - Mobile-friendly customer registration form
 - Collects basic customer details
-- Validates required fields
 - Creates a registration reference number
 - Shows a confirmation screen
-- Saves demo registratioms to the browser's localStorage
-
 
 ## Important limitation
 This version does NOT provide a shared online customer database. localStorage means records stay in the browser/device where they were submitted.
