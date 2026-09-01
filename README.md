@@ -1,4 +1,4 @@
-# Ingoair-Spornsor Int — Version 1
+# Ingoair-Spornsor Int/script
 
 This is a free, static first version of the customer registration website.
 
