@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ingoair-Spornsor Int | Customer Registration</title>
+  <meta name="description" content="Customer registration portal for Ingoair-Spornsor Int.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <div class="logo">IS</div>
+      <div>
+        <h1>Ingoair-Spornsor Int</h1>
+        <p>Customer Registration Portal</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <span class="badge">FREE CUSTOMER REGISTRATION</span>
+      <h2>Register with Ingoair-Spornsor Int</h2>
+      <p>Complete the form below. Your information will be used only for customer registration and service communication.</p>
+    </section>
+
+    <section class="card">
+      <div id="message" class="message" role="alert" aria-live="polite"></div>
+
+      <form id="registrationForm">
+        <div class="section-title">Personal Information</div>
+
+        <div class="grid">
+          <label>
+            Full Name *
+            <input name="fullName" type="text" required maxlength="100" autocomplete="name" placeholder="Enter your full name">
+          </label>
+
+          <label>
+            Phone Number *
+            <input name="phone" type="tel" required maxlength="30" autocomplete="tel" placeholder="e.g. 08012345678">
+          </label>
+
+          <label>
+            Email Address
+            <input name="email" type="email" maxlength="120" autocomplete="email" placeholder="you@example.com">
+          </label>
+
+          <label>
+            Date of Birth
+            <input name="dob" type="date">
+          </label>
+
+          <label>
+            Gender
+            <select name="gender">
+              <option value="">Select</option>
+              <option>Male</option>
+              <option>Female</option>
+              <option>Prefer not to say</option>
+            </select>
+          </label>
+
+          <label>
+            State
+            <input name="state" type="text" maxlength="60" placeholder="e.g. Kogi">
+          </label>
+
+          <label class="full">
+            Residential Address
+            <textarea name="address" maxlength="250" rows="3" placeholder="Enter your address"></textarea>
+          </label>
+        </div>
+
+        <div class="section-title">Additional Information</div>
+        <div class="grid">
+          <label>
+            Occupation / Business
+            <input name="occupation" type="text" maxlength="100" placeholder="Optional">
+          </label>
+
+          <label>
+            How did you hear about us?
+            <select name="source">
+              <option value="">Select</option>
+              <option>Friend / Referral</option>
+              <option>Social Media</option>
+              <option>Website</option>
+              <option>Advertisement</option>
+              <option>Other</option>
+            </select>
+          </label>
+        </div>
+
+        <label class="consent">
+          <input name="consent" type="checkbox" required>
+          <span>I confirm that the information I provided is accurate and I consent to Ingoair-Spornsor Int using it for customer registration and related communication. *</span>
+        </label>
+
+        <button type="submit" id="submitBtn">Submit Registration</button>
+      </form>
+
+      <div id="success" class="success hidden">
+        <div class="success-icon">✓</div>
+        <h3>Registration submitted</h3>
+        <p>Thank you for registering with Ingoair-Spornsor Int.</p>
+        <p class="reference">Your reference number: <strong id="reference"></strong></p>
+        <button type="button" class="secondary" onclick="resetForm()">Register another customer</button>
+      </div>
+    </section>
+
+    <p class="privacy">Please do not enter passwords, bank PINs, BVN, NIN or other highly sensitive information in this form.</p>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Ingoair-Spornsor Int. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
